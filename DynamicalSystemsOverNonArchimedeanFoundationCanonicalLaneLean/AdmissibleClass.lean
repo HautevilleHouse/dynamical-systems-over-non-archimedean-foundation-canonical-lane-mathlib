@@ -1,0 +1,17 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.DynamicalSystemsOverNonArchimedeanFoundationCanonicalLaneLean.UltrametricDynamics
+import HautevilleHouse.DynamicalSystemsOverNonArchimedeanFoundationCanonicalLaneLean.BerkovichSpaceDynamics
+import HautevilleHouse.DynamicalSystemsOverNonArchimedeanFoundationCanonicalLaneLean.NonArchimedeanEntropy
+import HautevilleHouse.DynamicalSystemsOverNonArchimedeanFoundationCanonicalLaneLean.TreeDynamics
+
+namespace HautevilleHouse
+namespace DynamicalSystemsOverNonArchimedeanFoundationCanonicalLaneLean
+
+structure NonArchimedeanAdmissibleClass where
+  object : NonArchimedeanDynamicalObject
+  endpointSatisfied : Prop
+  remainderRecorded : Prop
+  gateWitness : endpointSatisfied ∨ remainderRecorded
+
+end DynamicalSystemsOverNonArchimedeanFoundationCanonicalLaneLean
+end HautevilleHouse
